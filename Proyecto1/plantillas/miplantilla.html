@@ -1,0 +1,37 @@
+<html>
+    <body>
+    <h1>
+    "Hola alumnos estamos viendo nuestra primera plantilla"
+    
+    </h1>
+    <p>El nombre del profesor es: {{nombre_persona}} {{apellido_persona.upper}} </p>
+    <p>Estamos viendo el tema de las plantillas a dia: {{momento_actual.day}}/{{momento_actual.month}}
+        /{{momento_actual.year}}
+    </p>
+
+    
+    <p><strong>Temas del curso</strong></p>
+
+    <ul>
+    <p><!--En Django los bucles se hacen desde el HTML por multiples ventajas, ver estructura a continuacion-->
+        {% if temas %}
+             {% for elTema in temas %} <!--en django, un bucle for lleva las llaves con el % y el tipo de bucle, y se cierra al final como se muestra-->
+
+              <li>{{elTema}}</li>  
+
+    
+             {% endfor %}
+
+        {% else %}
+            <p>No hay elemento que mostrar</p>
+        {% endif %}
+    </ul>
+    </p>
+
+
+   
+
+
+    </body>
+
+</html>
