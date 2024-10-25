@@ -7,6 +7,7 @@ urlpatterns = [
     
    
     path('',views.contacto,name="Contacto"),
+ 
 
     
 ]
