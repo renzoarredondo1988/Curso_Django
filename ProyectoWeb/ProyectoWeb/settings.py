@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'contacto',
     'tienda',
     'carro',
+    'autenticacion',
+    'crispy_forms',
+    'crispy_bootstrap4',
 
 ]
 
@@ -143,3 +146,5 @@ EMAIL_USE_TLS=True
 EMAIL_PORT=587
 EMAIL_HOST__USER='renzo.mau1988@gmail.com'
 EMAIL_HOST_PASSWORD='123456789'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
