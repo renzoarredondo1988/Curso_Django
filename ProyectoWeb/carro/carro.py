@@ -5,7 +5,7 @@ class Carro:
         carro=self.session.get("carro") #"carro" es la clave del dicc que se almacena en la sesion.
         if not carro:
             carro=self.session["carro"]={}
-        #else:
+        
         self.carro=carro
         
 

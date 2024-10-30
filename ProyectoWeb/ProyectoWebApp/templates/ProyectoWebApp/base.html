@@ -25,6 +25,20 @@
         <span class="site-heading-lower">Gestión de Pedidos</span>
       </h1>
 
+      <div style="color: white; text-align: right; margin-right: 100px;">
+
+        {% if user.is_authenticated %}
+
+          Hola {{user.username}}&nbsp;&nbsp;<a href="{% url 'cerrar_sesion' %}" style="color: white;">Cerrar Sesion</a>
+
+        {% else %}
+
+         <a href="{% url 'logear' %}">Log in</a> &nbsp;&nbsp; <a href="Autenticacion">Registrate</a>
+
+
+        {% endif %}
+      </div>
+
 
  <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
